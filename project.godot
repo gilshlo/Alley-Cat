@@ -1,0 +1,37 @@
+; Alley Cat core remake. Open with Godot 4.5 or newer.
+config_version=5
+
+[application]
+config/name="Alley Cat - Moonlight Mischief"
+run/main_scene="res://scenes/Alley.tscn"
+config/features=PackedStringArray("4.5", "GL Compatibility")
+config/description="A keyboard-driven, five-room arcade platformer."
+
+[autoload]
+EventBus="*res://scripts/autoload/EventBus.gd"
+AudioManager="*res://scripts/autoload/AudioManager.gd"
+GameManager="*res://scripts/autoload/GameManager.gd"
+
+[display]
+window/size/viewport_width=640
+window/size/viewport_height=400
+window/size/window_width_override=1280
+window/size/window_height_override=800
+window/size/min_width=640
+window/size/min_height=400
+window/stretch/mode="viewport"
+window/stretch/scale_mode="integer"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+textures/canvas_textures/default_texture_filter=0
+2d/snap/snap_2d_transforms_to_pixel=true
+environment/defaults/default_clear_color=Color(0.035, 0.045, 0.09, 1)
+
+[layer_names]
+2d_physics/layer_1="World"
+2d_physics/layer_2="Cat"
+2d_physics/layer_3="Hazards"
+2d_physics/layer_4="Interactables"
+2d_physics/layer_5="Clotheslines"
+2d_physics/layer_6="Moving platforms"
