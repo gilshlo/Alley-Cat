@@ -1,0 +1,15 @@
+.godot/
+.tools/
+.codex/
+.agents/
+.env
+.env.*
+!.env.example
+export_templates/
+feature_profiles/
+script_templates/
+text_editor_themes/
+exports/
+*.tmp
+export.cfg
+export_credentials.cfg
